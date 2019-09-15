@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    belongs_to :tasks
+    #belongs_to :tasks
     
     before_save { self.email.downcase! }
     validates :name, presence: true, length: { maximum: 50 }
